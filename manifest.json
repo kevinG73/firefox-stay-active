@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Stay Active",
+  "version": "1.0",
+  "description": "Keep your browser tabs active with automatic activity management",
+  "permissions": [
+    "idle",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png"
+    }
+  }
+}

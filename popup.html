@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Stay Active</h1>
+        <p>Keep your tabs active</p>
+    </div>
+
+    <div class="controls">
+        <button id="toggleButton" class="button start-button">
+            Start Activity Manager
+        </button>
+
+        <div class="status-card">
+            <div class="status-row">
+                <span class="status-label">Time Active:</span>
+                <span id="timeDisplay" class="time-display">00:00:00</span>
+            </div>
+
+            <div class="status-row">
+                <span class="status-label">Status:</span>
+                <div class="status-indicator">
+                    <div id="statusDot" class="status-dot"></div>
+                    <span id="statusText" class="status-text">Inactive</span>
+                </div>
+            </div>
+
+            <div class="tab-info" id="tabInfo"></div>
+        </div>
+
+        <button id="resetButton" class="button reset-button hidden">
+            Reset
+        </button>
+    </div>
+
+    <div class="footer">
+        Activity is managed separately for each tab
+    </div>
+</div>
+<script src="js/popup.js"></script>
+</body>
+</html>
